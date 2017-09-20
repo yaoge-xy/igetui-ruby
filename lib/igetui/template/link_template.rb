@@ -1,7 +1,7 @@
 module IGeTui
   class LinkTemplate < BaseTemplate
-    STRING_ATTRIBUTES = %i(title text logo logo_url url).freeze
-    BOOLEAN_ATTRIBUTES = %i(is_ring is_vibrate is_clearable).freeze
+    STRING_ATTRIBUTES = [:title,:text,:logo,:logo_url,:url].freeze
+    BOOLEAN_ATTRIBUTES = [:is_ring,:is_vibrate,:is_clearable].freeze
 
     attr_accessor *STRING_ATTRIBUTES, *BOOLEAN_ATTRIBUTES
 
